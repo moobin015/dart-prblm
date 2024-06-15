@@ -29,5 +29,5 @@ class Dog extends Animal {
 
 void main() {
   Animal animal = Animal("name");
-  Dog dog = Dog("T");
+  Dog dog = Dog("Laltu");
 }
