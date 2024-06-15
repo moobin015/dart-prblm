@@ -1,34 +1,33 @@
 class Animal {
   late String name;
-  Animal(String name) {
-    this.name = name;
+
+  Animal(String ani_name) {
+    this.name = ani_name;
+    print(ani_name);
   }
 
-  void eat() {
-    print("$name is eating");
+  void timi() {
+    print("My dog name is $name");
+    print(name);
   }
 }
 
 class Dog extends Animal {
- Dog(String name) : super(name) {
+  late String d_name;
 
-void bark() {
-    print("$name is barking");
+  Dog(String dog_name) : super(dog_name) {
+    this.name = dog_name;
+    print('Dog is $dog_name');
   }
- }
- void mailo(){
-  Dog mailo = Dog("mailo");
-  mailo.eat();
-  
- }
- 
-  
- 
 
+  @override
+  void timi() {
+    name = 'mimifi';
+    print(name);
+  }
 }
 
 void main() {
-  Dog mailo = Dog("mailo");
-  mailo.eat();
+  Animal animal = Animal("name");
+  Dog dog = Dog("T");
 }
-  
