@@ -1,33 +1,30 @@
 class Animal {
-  late String name;
+  late String aniName;
 
-  Animal(String ani_name) {
-    this.name = ani_name;
-    print(ani_name);
+  Animal(String aniNam1) {
+    this.aniName = aniNam1;
+    print(aniNam1);
   }
 
-  void timi() {
-    print("My dog name is $name");
-    print(name);
+  void Bird() {
+    print("My bird name is ${this.aniName}");
   }
 }
 
-class Dog extends Animal {
-  late String d_name;
-
-  Dog(String dog_name) : super(dog_name) {
-    this.name = dog_name;
-    print('Dog is $dog_name');
-  }
+class Cow extends Animal {
+  Cow(super.aniNam1);
 
   @override
-  void timi() {
-    name = 'mimifi';
-    print(name);
+  void Bird() {
+    print("Bird is Black");
+    print('Bird is Whit');
   }
 }
 
 void main() {
-  Animal animal = Animal("name");
-  Dog dog = Dog("Laltu");
+  Animal animal = Animal("Horse");
+  animal.Bird();
+  //
+  Cow cow =Cow('Tiya');
+  cow.Bird();
 }
